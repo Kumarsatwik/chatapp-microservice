@@ -1,0 +1,31 @@
+{
+  "name": "chatapp",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "bun run --filter @chatapp/api start",
+    "dev": "bun run --filter @chatapp/api dev",
+    "test": "bun test",
+    "build": "bun run --filter @chatapp/api build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/bun": "latest",
+    "@types/node": "^25.0.9",
+    "@typescript-eslint/eslint-plugin": "^8.53.1",
+    "@typescript-eslint/parser": "^8.53.1",
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "pino": "^10.2.1",
+    "zod": "^4.3.5"
+  }
+}

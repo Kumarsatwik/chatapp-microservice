@@ -1,0 +1,19 @@
+{
+  "name": "@chatapp/common",
+  "version": "0.2.5",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "pino": "^10.2.1",
+    "zod": "^4.3.5"
+  }
+}
