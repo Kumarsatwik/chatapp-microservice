@@ -5,6 +5,11 @@
   },
   "files": [],
   "references": [
-    { "path": "./packages/common" }
+    { "path": "./packages/common" },
+    { "path": "./services/auth-service" }
+  ],
+  "include": [
+    "packages/common/**/*",
+    "services/auth-service/**/*"
   ]
 }

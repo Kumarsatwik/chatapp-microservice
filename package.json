@@ -3,7 +3,8 @@
   "type": "module",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "services/*"
   ],
   "scripts": {
     "start": "bun run --filter @chatapp/api start",
